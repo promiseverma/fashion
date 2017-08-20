@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require owl.carousel.min
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery.magnific-popup.min.js
@@ -23,7 +24,6 @@
 //= require slick.min
 //= require jquery.downCount
 //= require plugins
-//= require owl.carousel.min
 //= require isotope.pkgd.min
 //= require main
 //= require_tree .

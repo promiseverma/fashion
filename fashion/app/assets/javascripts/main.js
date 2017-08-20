@@ -289,32 +289,34 @@ owl active
 	});
 
 	//product banner slider
+	$(document).ready(function(){
+		
+		$(".product-banner-slider").owlCarousel({
 
-	$(".product-banner-slider").owlCarousel({
+			autoPlay: true, 
 
-		autoPlay: true, 
+			slideSpeed:2000,
 
-		slideSpeed:2000,
+			pagination:true,
 
-		pagination:true,
+			navigation:false,	  
 
-		navigation:false,	  
+			items : 1,
 
-		items : 1,
+			/* transitionStyle : "fade", */    /* [This code for animation ] */
 
-		/* transitionStyle : "fade", */    /* [This code for animation ] */
+			navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 
-		navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+			itemsDesktop : [1199,1],
 
-		itemsDesktop : [1199,1],
+			itemsDesktopSmall : [980,1],
 
-		itemsDesktopSmall : [980,1],
+			itemsTablet: [768,1],
 
-		itemsTablet: [768,1],
+			itemsMobile : [479,1],
 
-		itemsMobile : [479,1],
-
-	});
+		});
+	})
 
 	//Blog three slider
 

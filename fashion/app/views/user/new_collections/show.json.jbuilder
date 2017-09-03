@@ -1,0 +1,1 @@
+json.partial! "new_collections/new_collection", new_collection: @new_collection

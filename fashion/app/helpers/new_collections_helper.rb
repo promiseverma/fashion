@@ -1,0 +1,2 @@
+module NewCollectionsHelper
+end

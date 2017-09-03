@@ -1,0 +1,2 @@
+class NewCollection < ApplicationRecord
+end

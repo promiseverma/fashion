@@ -1,0 +1,1 @@
+json.array! @new_collections, partial: 'new_collections/new_collection', as: :new_collection

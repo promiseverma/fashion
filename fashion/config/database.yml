@@ -26,7 +26,12 @@ development:
 #   <<: *default
 #   database: db/test.sqlite3
 
-production:
-  adapter: postgresql
-  database: fashion_production
-  
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
+
+
+# NOTICE THE NEXT ENTRY/KEY
+# master_database:
+#   database: rubyurl_master
+#   <<: *development

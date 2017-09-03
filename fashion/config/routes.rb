@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   root to: 'visitors#index'
-  devise_for :users
   resources :users
+
+  devise_for :users, controllers: {
+        sessions: 'users/sessions'
+      }
+
+  namespace :user do
+  	resources :categories
+  	resources :new_collections
+  end
 end

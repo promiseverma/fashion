@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @new_collection.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @new_collection.description %>
+</p>
+
+<%= link_to 'Edit', edit_new_collection_path(@new_collection) %> |
+<%= link_to 'Back', new_collections_path %>

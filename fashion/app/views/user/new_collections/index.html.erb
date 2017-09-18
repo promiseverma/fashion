@@ -1,8 +1,8 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 <h1>New Collections</h1>
 
-<table>
+<table border="1" width="100%">
   <thead>
     <tr>
       <th>Title</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= new_collection.title %></td>
         <td><%= new_collection.description %></td>
-        <td><%= link_to 'Show', new_collection %></td>
-        <td><%= link_to 'Edit', edit_new_collection_path(new_collection) %></td>
-        <td><%= link_to 'Destroy', new_collection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_new_collection_path(new_collection) %></td>
+        <td><%= link_to 'Edit', edit_user_new_collection_path(new_collection) %></td>
+        <td><%= link_to 'Destroy', user_new_collection_path(new_collection), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New New Collection', new_new_collection_path %>
+<%= link_to 'Create New Collection', new_user_new_collection_path %>

@@ -1,4 +1,4 @@
-<%= form_for(new_collection) do |f| %>
+<%= form_for [:user, new_collection] do |f| %>
   <% if new_collection.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(new_collection.errors.count, "error") %> prohibited this new_collection from being saved:</h2>

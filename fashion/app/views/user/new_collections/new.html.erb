@@ -1,5 +1,5 @@
-<h1>New New Collection</h1>
+<h1>Create New Collection</h1>
 
-<%= render 'form', new_collection: @new_collection %>
+<%= render partial: 'form', locals: {new_collection: @new_collection} %>
 
-<%= link_to 'Back', new_collections_path %>
+<%#= link_to 'Back', new_collections_path %>

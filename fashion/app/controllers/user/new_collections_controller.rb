@@ -29,7 +29,7 @@ class User::NewCollectionsController < ApplicationController
 
     respond_to do |format|
       if @new_collection.save
-        format.html { redirect_to @new_collection, notice: 'New collection was successfully created.' }
+        format.html { redirect_to user_new_collections_path, notice: 'New collection was successfully created.' }
         format.json { render :show, status: :created, location: @new_collection }
       else
         format.html { render :new }
